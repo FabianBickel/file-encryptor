@@ -1,5 +1,4 @@
 import React, { useState, useCallback } from "react";
-import iconInbox from "../assets/Inbox.svg";
 
 function FileUploader(props: {
   onFileSelected: Function;

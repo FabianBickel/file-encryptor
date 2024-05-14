@@ -163,7 +163,6 @@ export function FileEncrypterDecrypter(props: {
 
     // Read the file content
     const fileArrayBuffer = await encryptedFile.arrayBuffer();
-    const dataView = new DataView(fileArrayBuffer);
 
     // Extract IV, encrypted data, and hash
     const iv = new Uint8Array(fileArrayBuffer.slice(0, 16)); // Assuming IV is the first 16 bytes
