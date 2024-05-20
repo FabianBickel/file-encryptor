@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from "react";
+import { InboxIcon } from "../assets/Icons";
 
 function FileUploader(props: {
   onFileSelected: Function;
@@ -72,7 +73,7 @@ function FileUploader(props: {
           <p className="font-bold">
             {isDragging ? "Drop your file here!" : "Click to add a file!"}
           </p>
-          <div className={`h-full aspect-square bg-${c}-400 icon-inbox`} />
+          <InboxIcon />
         </div>
       </div>
       {file && (
